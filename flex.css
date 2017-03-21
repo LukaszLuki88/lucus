@@ -1,0 +1,87 @@
+* {
+	box-sizing: border-box;
+}
+nav {
+	background-color: grey;
+}
+.container {
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+.flex-container {
+	display: flex;
+	width: 100%;
+	justify-content: flex-end;
+}
+.flex-container ul {
+	display: flex;
+}
+.flex-container ul li {
+	padding: 25px;
+}
+.jumbotron {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: lightblue;
+	font-size: 50px;
+}
+.pictures {
+	background-color: pink;
+	display: flex;
+	flex-wrap: wrap;
+}
+.pictures img {
+	height: 400px;
+	width: 400px;
+	max-width: 100%;
+	padding: 10px;
+	margin: 0 auto;
+}
+.cards div {
+	min-width: 200px;
+	text-align: center;
+	background-color: yellow;
+}
+.cards {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.cards div p {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 10px;
+	box-sizing: border-box;
+}
+footer {
+	background-color: lightgreen;
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	max-width: 1200px;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+	height: 200px;
+}
+footer p, h3 {
+	font-size: 20px;
+	padding: 20px;
+}
+footer .name {
+	display: flex;
+	flex: 2;
+	width: 100%;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+}
+footer .copy-laws, .address {
+	flex: 1;
+}
+footer .name img {
+	width: 40%;
+}
