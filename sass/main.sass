@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css?family=Bangers|Quicksand')
+@import url('https://fonts.googleapis.com/css?family=Bangers|Quicksand|Shrikhand')
+
+$boxes-color: #313234
+$first-font: Bangers
+$second-font: Shrikhand
+
+=border-radius($radius) 
+    -webkit-border-radius: $radius 
+    -moz-border-radius: $radius
+    -ms-border-radius: $radius 
+    border-radius: $radius
+
+*
+    box-sizing: border-box
+
+.container
+    max-width: 1200px
+    margin: 0 auto
+    display: block
+    width: 100%
+
+/* first section - header - beginning */
+
+nav 
+    background-color: $boxes-color
+    height: 50px
+    overflow: hidden
+
+    div
+        &:first-child
+            padding: 5px
+    img
+        position: relative
+        left: 100px
+
+    ul
+        line-height: 0
+        padding: 0
+        display: block
+        text-decoration: none
+        color: #fff
+        text-transform: uppercase
+        float: right
+        font-size: 0
+        text-align: center
+        display: inline-block
+        overflow: hidden
+    li
+        line-height: 50px
+        font-size: 25px
+        display: inline-block
+        font-family: $first-font
+        margin-right: 75px
+        width: 200px
+        height: 50px
+        margin: 10px
+        float: left
+        text-align: left
+    a
+        text-decoration: none
+        color: #fff
+        &:hover
+            color: red
+            font-size: 50px
+
+[class*='col-'] 
+    float: left
+    min-height: 1px
+
+/* first section - header - the end */
